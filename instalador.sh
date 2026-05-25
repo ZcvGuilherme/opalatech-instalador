@@ -37,8 +37,8 @@ echo "=============================="
 apt remove --purge -y \
 nodejs npm libnode-dev libnode72
 
-sudo apt autoremove -y
-sudo apt clean
+apt autoremove -y
+apt clean
 
 apt --fix-broken install -y
 
@@ -73,8 +73,8 @@ echo "=============================="
 npm uninstall -g typescript || true
 npm cache clean --force || true
 
-sudo apt autoremove -y
-sudo apt clean
+apt autoremove -y
+apt clean
 
 apt --fix-broken install -y
 
@@ -138,7 +138,7 @@ code code-insiders
 flatpak uninstall -y \
 com.visualstudio.code || true
 
-autoremove -y
+apt autoremove -y
 
 rm -f /etc/apt/sources.list.d/vscode.list
 rm -f /etc/apt/sources.list.d/code.list
